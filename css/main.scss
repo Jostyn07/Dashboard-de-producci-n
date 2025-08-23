@@ -83,20 +83,48 @@ body {
     .content {
         width: 100%;
         .main {
-            height: 100vh;
-            padding: 2.5em 3em 0;
-            border-right: 5px solid $lighter-gray;
+            padding: 2.5em 3em 0 3em;
+            border-right: 2px solid $lighter-gray;
 
-            .header {
+            header {
                 .title {
-                    font-family: $main-font;
-                    font-size: 2.55em;
-                    font-weight: 600;
+                    @include setFont($main-font, 2.55em, 600);
+                    text-transform: capitalize;
+                    color: $secondary-text;
+                    line-height: 1.2em;
+                }
+
+                span {
+                    @include setFont($main-font, 1.2em, 400);
+                    color: $primary-text;
+                    display: block;
+                    margin-top: 0.4em;
+                }
+            }
+
+            .search-bar {
+                .grp {
+                    position: relative;
+
+                    img {
+                        height: 1.35px;
+                        display: inline-block;
+                        position: absolute;
+                        left: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    input{
+                        display: block;
+                        padding: 14px 50px 14px 54px;
+                        border-radius: 10px;
+                    }
+                }
+
+
+
                 }
             }
         }
-        .profile-area {
-
-        }
     }
-}

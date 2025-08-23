@@ -63,14 +63,40 @@ body {
   width: 100%;
 }
 .wrapper .content .main {
-  height: 100vh;
-  padding: 2.5em 3em 0;
-  border-right: 5px solid #ebf1f5;
+  padding: 2.5em 3em 0 3em;
+  border-right: 2px solid #ebf1f5;
 }
-.wrapper .content .main .header .title {
+.wrapper .content .main header .title {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 2.55em;
   font-weight: 600;
+  text-transform: capitalize;
+  color: #082b2f;
+  line-height: 1.2em;
+}
+.wrapper .content .main header span {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #627f83;
+  display: block;
+  margin-top: 0.4em;
+}
+.wrapper .content .main .search-bar .grp {
+  position: relative;
+}
+.wrapper .content .main .search-bar .grp img {
+  height: 1.35px;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper .content .main .search-bar .grp input {
+  display: block;
+  padding: 14px 50px 14px 54px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
